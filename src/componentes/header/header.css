@@ -1,0 +1,37 @@
+/* Fondo púrpura */
+.custom-navbar {
+  background-color: #486284;
+}
+
+/* Imagen del logo */
+.logo {
+  height: 40px;   /* Ajusta este valor al tamaño que tenía tu h1 */
+  width: auto;    /* Mantiene proporción */
+  display: inline-block;
+}
+
+/* Botones de navegación */
+.nav-btn {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.nav-btn:hover {
+  background-color: #e2e2e2;
+}
+
+/* Botones de idioma */
+.lang-btn {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+}
+
+.lang-btn:hover {
+  background-color: #fff;
+  color: #486284;
+}

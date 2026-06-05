@@ -1,0 +1,39 @@
+.trailer {
+  position: relative;
+  width: 100%;
+}
+
+/* Texto arriba */
+.trailer-text {
+  padding: 60px 20px;
+  color: #000;
+}
+
+.trailer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.trailer-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Imagen de fondo */
+.trailer-image {
+  min-height: 100vh;
+  background: url("/src/assets/trailer.png") no-repeat center center;
+
+  background-size: cover;
+  position: relative;
+}
+
+/* Overlay opcional */
+.trailer-image::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}

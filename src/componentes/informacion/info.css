@@ -1,0 +1,38 @@
+.info {
+  background-color: #ffffff; /* fondo blanco */
+  color: #000000;            /* texto negro */
+  padding: 80px 20px;
+}
+
+.info-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.info-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Botón */
+.info-btn {
+  background-color: #6f42c1; /* púrpura */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.info-btn:hover {
+  background-color: #5a32a3; 
+  transform: scale(1.05);
+}
