@@ -1,7 +1,7 @@
 import lottieReact from "lottie-react"
 import oso from "../assets/oso.json";
 import pinguino from  "../assets/pinguino.json"
-import "./LottieLUISAR.css"
+import "./styleLuisa.css"
 import { useRef } from "react";
 
 const Lottie = lottieReact.default;
