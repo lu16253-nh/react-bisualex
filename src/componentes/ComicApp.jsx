@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ComicApp = () => {
+  const navigate = useNavigate();
 
   const iniciar = () => {
     alert("¡Comienza la historia del cómic!");
+    navigate("/historia");
   };
 
   return (
@@ -13,7 +16,7 @@ const ComicApp = () => {
 
         <div className="col-lg-10 text-center">
 
-          <h1 className="display-4 fw-bold text-primary mb-4">
+          <h1 className="display-7 fw-bold text-primary mb-4">
             UNA SOLA MENTE COLECTIVA
           </h1>
 

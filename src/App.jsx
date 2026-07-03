@@ -11,6 +11,8 @@ import { Footer } from "./componentes/footer/Footer";
 import Hero from "./componentes/hero/Hero";
 import ComicApp from "./componentes/ComicApp";
 import { Home } from "./componentes/Home";
+import Recomendaciones from "./componentes/Recomendaciones/Recomendaciones";
+
 
 
 const App = () => {
@@ -22,7 +24,7 @@ const App = () => {
         <Route path="/comic" element={<Comic />} />
         <Route path="/comicapp" element={<ComicApp />} />
       </Routes>
-      <Footer />
+     
     </BrowserRouter>
   )
 
