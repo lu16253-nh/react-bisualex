@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Recomendaciones from "./Recomendaciones/Recomendaciones";
+import { useNavigate } from "react-router-dom";
 
 const ComicApp = () => {
   const [mostrarModal, setMostrarModal] = useState(false);
+  const navigate = useNavigate();
 
   const iniciar = () => {
     setMostrarModal(true);
@@ -21,7 +23,7 @@ const ComicApp = () => {
 
           <button
             className="btn btn-primary btn-lg px-5 py-3 shadow"
-            onClick={iniciar}
+            onClick={() => navigate("/comicapp/inicio")}
           >
             Iniciar
           </button>

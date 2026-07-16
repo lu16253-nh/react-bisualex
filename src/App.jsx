@@ -12,6 +12,7 @@ import Hero from "./componentes/hero/Hero";
 import ComicApp from "./componentes/ComicApp";
 import { Home } from "./componentes/Home";
 import Recomendaciones from "./componentes/Recomendaciones/Recomendaciones";
+import EscenaInicio from "./EscenaInicio";
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/comic" element={<Comic />} />
         <Route path="/comicapp" element={<ComicApp />} />
+        <Route path="/comicapp/inicio" element={<EscenaInicio />} />
       </Routes>
      
     </BrowserRouter>
