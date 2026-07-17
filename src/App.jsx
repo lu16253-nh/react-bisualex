@@ -12,7 +12,7 @@ import Hero from "./componentes/hero/Hero";
 import ComicApp from "./componentes/ComicApp";
 import { Home } from "./componentes/Home";
 import Recomendaciones from "./componentes/Recomendaciones/Recomendaciones";
-import EscenaInicio from "./EscenaInicio";
+import EscenaInicio from "./componentes/comic/EscenaInicio";
 
 
 
