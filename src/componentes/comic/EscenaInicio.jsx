@@ -1,4 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
+import Terminal from "./Terminal";
 import lottieReact from "lottie-react";
 const Lottie = lottieReact.default;
 
@@ -15,6 +16,8 @@ const EscenaInicio = () => {
   const audioRef = useRef(new Audio(musica));
 
   const [reproduciendo, setReproduciendo] = useState(false);
+
+  const [terminalAbierta, setTerminalAbierta] = useState(false);
 
   const reproducirMusica = () => {
     if (reproduciendo) {
@@ -58,6 +61,8 @@ const EscenaInicio = () => {
         src={computador}
         alt="Computador"
         className="computador"
+        onClick={() => setTerminalAbierta(true)}
+        style={{cursor:"pointer"}}
       />
 
       <img
@@ -67,6 +72,12 @@ const EscenaInicio = () => {
         onClick={reproducirMusica}
         style={{ cursor: "pointer" }}
       />
+
+    {terminalAbierta && (
+  <Terminal
+    cerrar={() => setTerminalAbierta(false)}
+  />
+)}
 
     </div>
   );
