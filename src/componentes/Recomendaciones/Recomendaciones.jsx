@@ -13,9 +13,9 @@ function Recomendaciones({ abierto, onCerrar, onContinuar }) {
         <h2>RECOMENDACIONES</h2>
         <div className="caja">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Se recomienda activar el sonido para una mejor experiencia.</li>
+            <li>Haz clic en los objetos interactivos.</li>
+            <li>Explora cuidadosamente el entorno para encontrar pistas.</li>
           </ol>
         </div>
         <button className="btn-continuar" onClick={onContinuar}>

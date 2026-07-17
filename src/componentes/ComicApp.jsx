@@ -17,13 +17,15 @@ const ComicApp = () => {
           <h1 className="display-7 fw-bold text-primary mb-4">
             UNA SOLA MENTE COLECTIVA
           </h1>
+
           <p className="fs-4 text-secondary mb-4">
-            La era digital nos invita a vivir las historias de otra manera. Aquí no solo lees, sino que eliges, exploras y sientes.
+            La era digital nos invita a vivir las historias de otra manera.
+            Aquí no solo lees, sino que eliges, exploras y sientes.
           </p>
 
           <button
             className="btn btn-primary btn-lg px-5 py-3 shadow"
-            onClick={() => navigate("/comicapp/inicio")}
+            onClick={iniciar}
           >
             Iniciar
           </button>
@@ -33,7 +35,10 @@ const ComicApp = () => {
       <Recomendaciones
         abierto={mostrarModal}
         onCerrar={() => setMostrarModal(false)}
-        onContinuar={() => setMostrarModal(false)}
+        onContinuar={() => {
+          setMostrarModal(false);
+          navigate("/comicapp/inicio");
+        }}
       />
     </div>
   );
